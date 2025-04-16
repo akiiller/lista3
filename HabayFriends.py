@@ -17,7 +17,7 @@ for s in signedList:
     elif "NO" in s:
         signedNo.append(s)
 
-print('Saída')
+
 ms = set(signedYes)
 signedYes = list(ms)
 signedYes.sort()
