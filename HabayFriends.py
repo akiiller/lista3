@@ -26,6 +26,6 @@ signedList.clear()
 signedList = signedYes + signedNo
 
 for y in signedList:
-    print(y[:y.index("YES"  if "YES" in y else "NO")])
+    print(y[:y.index(" YES"  if " YES" in y else " NO")])
 
-print("Amigo do Habay: \n", habayFriend[:habayFriend.index("YES")])
+print("\nAmigo do Habay:\n" + habayFriend[:habayFriend.index("YES")])
