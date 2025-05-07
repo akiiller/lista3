@@ -22,10 +22,14 @@ ms = set(signedYes)
 signedYes = list(ms)
 signedYes.sort()
 signedNo.sort()
-signedList.clear()
-signedList = signedYes + signedNo
 
-for y in signedList:
-    print(y[:y.index(" YES"  if " YES" in y else " NO")])
 
-print("\nAmigo do Habay:\n" + habayFriend[:habayFriend.index("YES")])
+for y in signedYes:
+    print(y[:y.index(" YES")])
+
+for y in signedNo:
+    print(y[:y.index(" NO")])
+
+print("")
+
+print("Amigo do Habay:\n" + habayFriend[:habayFriend.index("YES")])
